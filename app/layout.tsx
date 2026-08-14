@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Toaster } from "@/components/ui/sonner";
+
 import "./globals.css";
+import QueryProvider from "@/providers/query-provider";
 
 export const metadata: Metadata = {
   title: "FixItNow — Your Trusted Home Service Platform",
@@ -15,8 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        {children}
-        <Toaster richColors position="top-center" />
+        <QueryProvider>
+          {children}
+          <Toaster richColors position="top-center" />
+        </QueryProvider>
       </body>
     </html>
   );
