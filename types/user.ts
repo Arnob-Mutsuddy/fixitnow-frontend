@@ -10,3 +10,20 @@ export interface IUser {
   createdAt: string;
   updatedAt: string;
 }
+
+export interface IRegisterPayload {
+  name: string;
+  email: string;
+  password: string;
+  role: "CUSTOMER" | "TECHNICIAN";
+}
+
+export interface ILoginPayload {
+  email: string;
+  password: string;
+}
+
+export interface ILoginResponse {
+  accessToken: string;
+  user: IUser;
+}
