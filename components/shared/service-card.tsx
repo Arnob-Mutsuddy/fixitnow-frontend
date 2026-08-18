@@ -22,7 +22,7 @@ export default function ServiceCard({ service }: { service: IService }) {
         )}
         {service.technician && service.technician.avgRating > 0 && (
           <div className="flex items-center gap-1 mt-1 text-sm">
-            <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+            <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
             {service.technician.avgRating.toFixed(1)}
           </div>
         )}

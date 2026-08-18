@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Toaster } from "@/components/ui/sonner";
 import QueryProvider from "@/providers/query-provider";
 import AuthProvider from "@/providers/auth-provider";
-
+import Navbar from "@/components/shared/navbar";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({
       <body>
         <QueryProvider>
           <AuthProvider>
-    
+            <Navbar />
             {children}
             <Toaster richColors position="top-center" />
           </AuthProvider>
