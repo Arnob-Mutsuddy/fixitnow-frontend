@@ -20,8 +20,8 @@ export default function Home() {
             Your Trusted Home Service Platform
           </h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Book qualified technicians for plumbing, electrical, cleaning, painting, and more —
-            all in one place.
+            Book qualified technicians for plumbing, electrical, cleaning, painting, and more <br />
+            All in one Place.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <Button size="lg" asChild>
