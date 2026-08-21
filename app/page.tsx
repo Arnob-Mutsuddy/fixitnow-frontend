@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main>
 
-      <section className="bg-muted/50 py-20">
+      {/* <section className="bg-muted/50 py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
             Your Trusted Home Service Platform
@@ -32,8 +32,88 @@ export default function Home() {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
 
+      <section className="bg-muted/50 py-8">
+        <div className="container mx-auto px-4">
+          <div className="grid items-center gap-6 md:grid-cols-2">
+
+      <div className="text-center">
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
+          Your Trusted Home Service Platform
+        </h1>
+
+        <p className="mt-3 text-base md:text-lg text-muted-foreground max-w-xl mx-auto">
+          Book qualified technicians for plumbing, electrical, cleaning,
+          painting, and more. <br />
+          All in one Place.
+        </p>
+
+        <div className="mt-5 flex justify-center gap-3">
+          <Button size="lg" asChild>
+            <Link href="/services">Browse Services</Link>
+          </Button>
+
+          <Button size="lg" variant="outline" asChild>
+            <Link href="/auth/register">Join as Technician</Link>
+          </Button>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-2 gap-3">
+
+        <div className="h-32 md:h-36 overflow-hidden rounded-xl bg-white shadow-sm">
+          <video
+            src="/animations/AC-Installation.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="h-full w-full object-contain"
+          />
+        </div>
+
+        <div className="h-32 md:h-36 overflow-hidden rounded-xl bg-white shadow-sm">
+          <video
+            src="/animations/plumber.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="h-full w-full object-contain"
+          />
+        </div>
+
+        <div className="h-32 md:h-36 overflow-hidden rounded-xl bg-white shadow-sm">
+          <video
+            src="/animations/Electrical-Electrician.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="h-full w-full object-contain"
+          />
+        </div>
+
+        <div className="h-32 md:h-36 overflow-hidden rounded-xl bg-white shadow-sm">
+          <video
+            src="/animations/cleaning.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="h-full w-full object-contain"
+          />
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+      {/* */}
       <section className="container mx-auto px-4 py-16">
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-2xl font-bold">Featured Services</h2>
