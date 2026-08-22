@@ -39,14 +39,29 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-6 text-sm">
-          <Link href="/services" className="hover:text-primary">
+           <Button variant="ghost" className="flex items-center gap-2">
+            <Link href="/services" className="hover:text-primary">
             Services
           </Link>
-          {user && (
+            </Button>
+          {/* <Link href="/services" className="hover:text-primary">
+            Services
+          </Link> */}
+           <Button variant="ghost" className="flex items-center gap-2">
+            {user && (
+            
             <Link href={dashboardPathByRole[user.role]} className="hover:text-primary">
               Dashboard
             </Link>
           )}
+            
+          </Button>
+          {/* {user && (
+            
+            <Link href={dashboardPathByRole[user.role]} className="hover:text-primary">
+              Dashboard
+            </Link>
+          )} */}
         </nav>
 
         <div className="flex items-center gap-3">

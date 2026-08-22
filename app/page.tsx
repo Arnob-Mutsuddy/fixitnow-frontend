@@ -40,6 +40,7 @@ export default function Home() {
 
       <div className="text-center">
         <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
+
           Your Trusted Home Service Platform
         </h1>
 
